@@ -1,0 +1,5 @@
+<%@ include file="_header.jspf" %><div class="row justify-content-center"><div class="col-md-5"><div class="card shadow-sm"><div class="card-body p-4"><h3>Sign in</h3><p class="text-muted">Access your loan workspace.</p>
+<% if(request.getAttribute("error")!=null){ %><div class="alert alert-danger"><%=request.getAttribute("error")%></div><% } %>
+<% if("1".equals(request.getParameter("registered"))){ %><div class="alert alert-success">Registration successful. Please sign in.</div><% } %>
+<form method="post" action="${pageContext.request.contextPath}/login"><label class="form-label">Email</label><input class="form-control mb-3" name="email" type="email" required><label class="form-label">Password</label><input class="form-control mb-3" name="password" type="password" required><button class="btn btn-primary w-100">Login</button></form>
+<p class="mt-3 mb-0">New applicant? <a href="${pageContext.request.contextPath}/register">Create account</a></p></div></div></div></div><%@ include file="_footer.jspf" %>
