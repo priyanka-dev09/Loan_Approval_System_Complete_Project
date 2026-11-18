@@ -31,7 +31,7 @@ A Java Servlet/JSP + JDBC + MySQL application following the supplied SRS. It use
 ## First admin
 Run `AdminSeeder` as a Java application after configuring `db.properties`. It creates:
 - Email: `admin@loan.local`
-- Password: 
+- Password: Admin@123
 
 The seeder refuses to create a duplicate email. Change the password after logging in; never use this demo credential on a public server.
 
